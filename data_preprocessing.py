@@ -55,3 +55,7 @@ def load_dataset(data_dir):
 
     dataset = ImageFolder(root=data_dir, transform=transform)
     return dataset
+
+
+if __name__ == "__main__":
+    augment_data('dataset', 'augmented_dataset', num_augmented=50)
