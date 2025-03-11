@@ -32,7 +32,7 @@ def predict_image(image_path, model_path, data_dir):
         predicted_class = torch.argmax(output, dim=1).item()
 
     print(f"预测类别: {idx_to_class[predicted_class]}")
-
+# 2025/3/10 20:0500
 if __name__ == "__main__":
     predict_image(
         image_path=r"E:\HuaweiMoveData\Users\刘振宸\Documents\Tencent Files\2894044135\nt_qq\nt_data\Pic\2025-03\Ori\5f0136ce5db0dacd629e010cccf7bbde.jpg",
