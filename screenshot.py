@@ -29,7 +29,7 @@ with mss.mss() as sct:
 
         if key == ord(" "):  # 按空格键退出
             break
-        elif key == ord("1"):  # 按 "S" 键保存截图
+        elif key == ord("1"):  # 按 "1" 键保存截图
             timestamp = time.strftime("%Y%m%d_%H%M%S")  # 生成时间戳
             file_path = os.path.join(save_directory, f"screenshot_{timestamp}.png")
             cv2.imwrite(file_path, screenshot)
