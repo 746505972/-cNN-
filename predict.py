@@ -35,7 +35,7 @@ def predict_image(image_path, model_path, data_dir):
 
 if __name__ == "__main__":
     predict_image(
-        image_path=r"屏幕截图 2025-03-09 170557.png",
+        image_path=r"E:\HuaweiMoveData\Users\刘振宸\Documents\Tencent Files\2894044135\nt_qq\nt_data\Pic\2025-03\Ori\5f0136ce5db0dacd629e010cccf7bbde.jpg",
         model_path="mahjong_cnn.pth",
         data_dir="augmented_dataset"
     )
