@@ -23,9 +23,10 @@ with mss.mss() as sct:
     while True:
         hand0 = cv2.resize(np.asarray(sct.grab(locate00))[:, :, :3], (800, 90))
         river0 = cv2.resize(np.asarray(sct.grab(locate10))[:, :, :3], (200, 200))
-        river1 = cv2.resize(np.asarray(sct.grab(locate11))[:, :, :3], (200, 200))
-        river2 = cv2.resize(np.asarray(sct.grab(locate12))[:, :, :3], (200, 200))
-        river3 = cv2.resize(np.asarray(sct.grab(locate13))[:, :, :3], (200, 200))
+        river1 = cv2.rotate(cv2.resize(np.asarray(sct.grab(locate11))[:, :, :3], (200, 200)), cv2.ROTATE_90_CLOCKWISE)
+        river2 = cv2.rotate(cv2.resize(np.asarray(sct.grab(locate12))[:, :, :3], (200, 200)), cv2.ROTATE_180)
+        river3 = cv2.rotate(cv2.resize(np.asarray(sct.grab(locate13))[:, :, :3], (200, 200)),
+                            cv2.ROTATE_90_COUNTERCLOCKWISE)
 
         # 将牌河画面水平拼接在一起
         river = cv2.hconcat([river0, river1, river2, river3])
