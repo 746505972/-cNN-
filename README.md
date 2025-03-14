@@ -1,7 +1,3 @@
 # MajiangSoulCNN
 
-雀魂麻将cNN识别
-
-在`data_preprocessing.py`生成一下`augmented_dataset`，传不上来😅
-
-成功率有待改进
+项目中道崩殂
